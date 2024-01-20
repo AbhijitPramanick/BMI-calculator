@@ -3,7 +3,7 @@ import "./App.css";
 const App = () => {
   const [heightValue, setHeightValue] = useState("");
   const [weightValue, setWeightValue] = useState("");
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState("");
   const [comment, setComment] = useState("");
   const handleCalculate = () => {
     const h = parseFloat(heightValue);
@@ -15,13 +15,16 @@ const App = () => {
       else if (bmi >= 18.5 && bmi < 22.5) setComment("Normal weight");
       else if (bmi >= 25 && bmi < 29.9) setComment("Over weight");
       else setComment("Obese");
-      handleReset();
+      setHeightValue("");
+      setWeightValue("");
     }
   };
   const handleReset = () => {
     console.log(`Resetting the values`);
     setHeightValue("");
     setWeightValue("");
+    setResult("");
+    setComment("");
   };
 
   return (
