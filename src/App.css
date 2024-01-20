@@ -28,7 +28,7 @@ body {
 .master {
   height: 70vh;
   width: 70vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   justify-content: space-evenly;
   padding: 10px;
   color: white;
