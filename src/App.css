@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
   width: 100vw;
@@ -13,14 +14,63 @@ body {
   justify-content: center;
   align-items: center;
 }
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_y {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .master {
   height: 70vh;
   width: 70vh;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   padding: 10px;
   color: white;
   border-radius: 90px 0 90px 0;
+}
+.input {
+  width: 90%;
+  align-items: start;
+  font-size: 1.1rem;
+}
+.inputLabel {
+  font-size: 0.8rem;
+}
+.inputArea {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 5px 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.btnDiv {
+  width: 50%;
+  justify-content: space-between;
+}
+.actionBtn {
+  font-size: 1rem;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(189, 189, 189);
+  border: none;
+  cursor: pointer;
+}
+.actionBtn:hover {
+  color: white;
+}
+.result {
+  border: 2px solid grey;
+  width: 70%;
+  height: 10%;
+  font-size: 1.1rem;
+  border-radius: 10px;
 }
